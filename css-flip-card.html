@@ -1,0 +1,36 @@
+<div class="flip">
+  <div class="inner">
+    <div class="front">Front</div>
+    <div class="back">Back</div>
+  </div>
+</div>
+
+<style>
+  html,
+  body {
+    margin: 20px;
+  }
+  .flip {
+    perspective: 1000px;
+    width: 200px;
+    height: 120px;
+  }
+  .inner {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  .flip:hover .inner {
+    transform: rotateY(180deg);
+  }
+  .front,
+  .back {
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+  }
+  .back {
+    transform: rotateY(180deg);
+    background: #2196f3;
+    color: white;
+  }
+</style>

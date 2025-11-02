@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky Navbar Example</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+
+      /* Navbar Styling */
+      nav {
+        position: sticky;
+        top: 0;
+        background: #2196f3;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 15px 0;
+        font-size: 18px;
+        z-index: 1000;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 15px;
+        border-radius: 4px;
+        transition: background 0.3s;
+      }
+
+      nav a:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      /* Page Sections */
+      section {
+        height: 100vh;
+        padding: 50px;
+      }
+
+      #home {
+        background: #e3f2fd;
+      }
+
+      #about {
+        background: #bbdefb;
+      }
+
+      #services {
+        background: #90caf9;
+      }
+
+      #contact {
+        background: #64b5f6;
+      }
+
+      /* Smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+      <h1>Home Section</h1>
+      <p>Scroll down to see the sticky navbar stay fixed at the top.</p>
+    </section>
+
+    <section id="about">
+      <h1>About Section</h1>
+      <p>This is where you can describe yourself or your company.</p>
+    </section>
+
+    <section id="services">
+      <h1>Services Section</h1>
+      <p>List your services or features here.</p>
+    </section>
+
+    <section id="contact">
+      <h1>Contact Section</h1>
+      <p>Provide your contact form or social links here.</p>
+    </section>
+  </body>
+</html>

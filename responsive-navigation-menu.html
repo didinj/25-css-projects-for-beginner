@@ -1,0 +1,25 @@
+<nav>
+  <ul>
+    <li>Home</li>
+    <li>About</li>
+    <li>Contact</li>
+  </ul>
+</nav>
+
+<style>
+  html,
+  body {
+    margin: 20px;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    justify-content: center;
+  }
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+    }
+  }
+</style>

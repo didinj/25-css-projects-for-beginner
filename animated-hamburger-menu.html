@@ -1,0 +1,21 @@
+<div class="menu"></div>
+
+<style>
+  html,
+  body {
+    margin: 20px;
+  }
+  .menu,
+  .menu::before,
+  .menu::after {
+    width: 30px;
+    height: 4px;
+    background: #333;
+    display: block;
+    margin: 6px 0;
+    transition: 0.3s;
+  }
+  .menu:hover {
+    transform: rotate(45deg);
+  }
+</style>

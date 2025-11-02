@@ -1,0 +1,28 @@
+<div class="overlay">
+  <img src="https://placehold.co/400" />
+  <div class="text">Hello!</div>
+</div>
+
+<style>
+  html,
+  body {
+    margin: 20px;
+  }
+  .overlay {
+    position: relative;
+  }
+  .text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .overlay:hover .text {
+    opacity: 1;
+  }
+</style>

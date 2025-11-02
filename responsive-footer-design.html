@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Footer</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        line-height: 1.6;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      footer {
+        background-color: #222;
+        color: #ddd;
+        padding: 40px 20px;
+      }
+
+      .footer-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .footer-section {
+        flex: 1 1 250px;
+        margin: 20px;
+      }
+
+      .footer-section h3 {
+        color: #fff;
+        margin-bottom: 15px;
+        font-size: 1.2rem;
+      }
+
+      .footer-section p,
+      .footer-section a {
+        color: #bbb;
+        font-size: 0.95rem;
+        text-decoration: none;
+      }
+
+      .footer-section a:hover {
+        color: #fff;
+      }
+
+      .social-links a {
+        display: inline-block;
+        margin-right: 10px;
+        font-size: 1.2rem;
+        color: #bbb;
+        transition: color 0.3s;
+      }
+
+      .social-links a:hover {
+        color: #fff;
+      }
+
+      .footer-bottom {
+        text-align: center;
+        padding: 15px 0;
+        background: #111;
+        color: #aaa;
+        font-size: 0.9rem;
+        margin-top: 20px;
+      }
+
+      @media (max-width: 768px) {
+        .footer-container {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .footer-section {
+          margin: 10px 0;
+        }
+
+        .social-links {
+          margin-top: 10px;
+        }
+      }
+    </style>
+    <!-- Optional: Font Awesome for icons -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div style="flex: 1"></div>
+    <!-- For spacing -->
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section about">
+          <h3>About</h3>
+          <p>
+            Djamware provides high-quality web and mobile development tutorials
+            with real project examples.
+          </p>
+        </div>
+
+        <div class="footer-section links">
+          <h3>Quick Links</h3>
+          <a href="#">Home</a><br />
+          <a href="#">Tutorials</a><br />
+          <a href="#">Blog</a><br />
+          <a href="#">Contact</a>
+        </div>
+
+        <div class="footer-section contact">
+          <h3>Contact</h3>
+          <p>Email: info@djamware.com</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2025 Djamware.com | All Rights Reserved
+      </div>
+    </footer>
+  </body>
+</html>

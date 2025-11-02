@@ -1,0 +1,30 @@
+<a href="#modal">Open Modal</a>
+<div id="modal" class="modal">
+  <div class="content">
+    <a href="#">X</a>
+    <p>Hello!</p>
+  </div>
+</div>
+
+<style>
+  html,
+  body {
+    margin: 20px;
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .modal:target {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+  }
+</style>

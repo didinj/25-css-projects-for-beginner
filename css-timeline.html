@@ -1,0 +1,26 @@
+<ul class="timeline">
+  <li>2020 - Started learning CSS</li>
+  <li>2025 - Built this project</li>
+</ul>
+
+<style>
+  html,
+  body {
+    margin: 20px;
+  }
+  .timeline {
+    position: relative;
+    list-style: none;
+  }
+  .timeline::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    width: 2px;
+    height: 100%;
+    background: #2196f3;
+  }
+  .timeline li {
+    margin: 20px 0 20px 40px;
+  }
+</style>

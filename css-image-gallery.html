@@ -1,0 +1,21 @@
+<div class="gallery">
+  <img src="https://placehold.co/400" /><img
+    src="https://placehold.co/400"
+  /><img src="https://placehold.co/400" />
+</div>
+
+<style>
+  html,
+  body {
+    margin: 20px;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+  }
+  .gallery img {
+    width: 100%;
+    border-radius: 8px;
+  }
+</style>

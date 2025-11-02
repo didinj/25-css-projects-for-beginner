@@ -1,0 +1,105 @@
+<h3>Custom Checkbox</h3>
+<label class="custom">
+  <input type="checkbox" checked />
+  <span class="checkmark"></span>
+  I agree to the terms
+</label>
+
+<h3>Custom Radio Buttons</h3>
+<label class="custom">
+  <input type="radio" name="option" checked />
+  <span class="radiomark"></span>
+  Option 1
+</label>
+<label class="custom">
+  <input type="radio" name="option" />
+  <span class="radiomark"></span>
+  Option 2
+</label>
+
+<style>
+  html,
+  body {
+    margin: 20px;
+  }
+  /* General label styling */
+  .custom {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 8px 0;
+  }
+
+  /* Hide native input */
+  .custom input {
+    display: none;
+  }
+
+  /* Custom checkbox style */
+  .checkmark {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #555;
+    border-radius: 4px;
+    margin-right: 8px;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  /* Checkbox check symbol */
+  .checkmark::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 0px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+  }
+
+  /* Checked state for checkbox */
+  .custom input[type="checkbox"]:checked + .checkmark {
+    background-color: #2196f3;
+    border-color: #2196f3;
+  }
+  .custom input[type="checkbox"]:checked + .checkmark::after {
+    opacity: 1;
+  }
+
+  /* Custom radio style */
+  .radiomark {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #555;
+    border-radius: 50%;
+    margin-right: 8px;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  /* Radio inner dot */
+  .radiomark::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 3px;
+    left: 3px;
+    background: #2196f3;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.2s ease;
+  }
+
+  /* Checked state for radio */
+  .custom input[type="radio"]:checked + .radiomark {
+    border-color: #2196f3;
+  }
+  .custom input[type="radio"]:checked + .radiomark::after {
+    transform: scale(1);
+  }
+</style>
